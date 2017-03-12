@@ -64,7 +64,6 @@
 	\cleardoublepage
 
 	\thispagestyle{empty}
-	\listoffigures
 	\cleardoublepage
 	\setcounter{page}{1}
 	
@@ -96,10 +95,6 @@
 				\label{fig: Events Activity Diagram}
 			\end{figure}
 
-		\clearpage
-	
-		\subsection{Technology Choices}\label{sec:technology-choices}
-	
 		
 		\clearpage
 		
@@ -138,6 +133,15 @@
 				\end{itemize}
 				
 			\item Communication interfaces
+		\begin{itemize}
+		\item The application will make use of push notifiacitons to the users mobile devices in order to communicate any special information. 
+
+        \item The location of the user will be found when they connect to any of the universities wifi hotspots.
+
+		\item For communcation with the application server TCP/IP will be used
+
+		\item An Apache web server will be used to access the MySQL database
+		\end{itemize}
 			\end{itemize}
 		
 		\subsection{Performance Requirements}\label{sec:performance-requirements}
