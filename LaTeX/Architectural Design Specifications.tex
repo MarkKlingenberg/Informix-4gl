@@ -45,8 +45,7 @@
 				Mangwane Kenneth 15183379 \\
 				Ndung'u Brian 15322913 \\
 				van der Vyver Nardus 15012698 \\
-				van Tonder Jan-Justin 15073298 \\
-				\href{https://github.com/jan-justin}{Jan-Justin van Tonder - 15073298}
+				van Tonder Jan-Justin 15073298
 			}\\
 			[30mm]
 			
@@ -69,51 +68,75 @@
 	\cleardoublepage
 	\setcounter{page}{1}
 	
-	\section{External Interface Requirments}\label{sec:external-inteface-requirments}
-	
-	
+	\section{Introduction}\label{sec: introduction}
+		This section of the document is intended to briefly describe the intent of the rest of the document. It will elaborate on the on the Purpose and the Scope of the document.
 		
-	\clearpage
-		
-
-	\section{Performance Requirements}\label{sec:performance-requirements}
-		\begin{itemize}
-		\small
-		\item The system should provide the relevant location searched for by the user within a short amount of time.
-		\item The system should provide the accurate location of the user inside or outside of a building using wifi connectivity.
-		\item The system should be able to provide the most effective or quickest route from the users location to their specified destination.
-		\item The system should be resource friendly and not significantly impact the battery life of the device it is on.
-		\item The system should be able to be paused in terms of being able to exit the application, and resumed in terms of reopening the application.
-		\item The system should also be able to accommodate the student population and guests so that the number of users using the system will not hinder the performance of the application.
-		\end{itemize}
-		
-		
-	\clearpage
-
-	\section{Design Constraints}\label{sec:design-constraints}
-		\begin{itemize}
-		\small
-		\item Limited WiFi hotspots will affect the accuracy of determining the users location.
-		\item Different WiFi standards on devices would affect the accuracy of triangulating a users location.
-		\item The dependence on the WiFi hotspots means that if it were to experience some form of failure the system will resultantly also fail.
-		\item Different device displays could affect the way in which the navigation system will be displayed on different devices.
-		\item The size of the system on memory should be taken into consideration to allow for as many devices as possible, therefore it has to be resource friendly.
-		\end{itemize}
-		
-
+		\subsection{Purpose}\label{sec: purpose}
+			The purpose of this document is to describe the architectural design and illustrate the domain model of the proposed NavUP system. It is based on the previously stipulated requirements document and will subsequently be extended.\\
+			
+			\noindent The described Architectural Design and domain model will form the basis of the development phase of the NavUP system. It will serve as a guideline for the developers.\\
+			
+			\noindent This document is therefore intended for the system designers and the system developers.
+			
+			\subsection{Scope}\label{sec: scope}
+				As is previously described in the SRS document, NavUP is, chiefly, a navigational service that is restricted to the boundaries of the University of Pretoria's Hatfield campus. The system will also feature user management, meta-content management, surveillance and notifications.\\
+				
+				\noindent This document will delve into the non-functional requirements of the NavUP system. Moreover, the technical deployment of the system and how said system will interface with any external systems that are required will also be addressed.
+				
+				\subsection{Overview}\label{sec: overview}
+					The remainder of the document will describe and illustrate the architectural design and domain model of the proposed NavUP system. Section two will address the deployment and technologies used. Section three will address the non-functional requirements and constraints. Section four will illustrate the domain model diagrams.
+					
 	\clearpage
 	
-	\section{Software System Attributes}\label{sec:design-constraints}
-		\begin{itemize}
-		\small
-		\item The security of the system would be the safety protocols to prevent any misuse of users private information which in this case would be their location. These safety protocols include forms of encryption in the database and access control for administrative purposes.
-		\item The reliability of the system will be dependent on the accuracy of determining the users location and destination and providing accurate and effective routes.
-		\item The interoperability of the system should allow for the communication amongst multiple devices made by different manufacturers in order to effectively use that information for crowd sourcing purposes and in order to identify congested areas.
-		\item The availability of the system is another crucial attribute which determines the quality of the system. The system should be readily available at any time to assist the user with navigation. This therefore means that the system’s infrastructure should not be bound to an infrastructure which only operates at specific times.
-		\end{itemize}
+	\section{Deployment Model}\label{sec: deployment-model}
+	
+		\subsection{Deployment Diagram}\label{subsec:deployment-diagram}
+
+		\clearpage
+	
+		\subsection{Technology Choices}\label{sec:technology-choices}
+	
+		
+		\clearpage
+		
+	\section{Non-functional Requirements and Constraints}\label{sec: non-functional-requirments}
+	
+		\subsection{External Interface Requirments}\label{sec:external-inteface-requirments}
+		
+		\subsection{Performance Requirements}\label{sec:performance-requirements}
+			\begin{itemize}
+			\small
+			\item The system should provide the relevant location searched for by the user within a short amount of time.
+			\item The system should provide the accurate location of the user inside or outside of a building using wifi connectivity.
+			\item The system should be able to provide the most effective or quickest route from the users location to their specified destination.
+			\item The system should be resource friendly and not significantly impact the battery life of the device it is on.
+			\item The system should be able to be paused in terms of being able to exit the application, and resumed in terms of reopening the application.
+			\item The system should also be able to accommodate the student population and guests so that the number of users using the system will not hinder the performance of the application.
+			\end{itemize}
+		
+
+		\subsection{Design Constraints}\label{sec:design-constraints}
+			\begin{itemize}
+			\small
+			\item Limited WiFi hotspots will affect the accuracy of determining the users location.
+			\item Different WiFi standards on devices would affect the accuracy of triangulating a users location.
+			\item The dependence on the WiFi hotspots means that if it were to experience some form of failure the system will resultantly also fail.
+			\item Different device displays could affect the way in which the navigation system will be displayed on different devices.
+			\item The size of the system on memory should be taken into consideration to allow for as many devices as possible, therefore it has to be resource friendly.
+			\end{itemize}
+		
+	
+		\subsection{Software System Attributes}\label{sec:design-constraints}
+			\begin{itemize}
+			\small
+			\item The security of the system would be the safety protocols to prevent any misuse of users private information which in this case would be their location. These safety protocols include forms of encryption in the database and access control for administrative purposes.
+			\item The reliability of the system will be dependent on the accuracy of determining the users location and destination and providing accurate and effective routes.
+			\item The interoperability of the system should allow for the communication amongst multiple devices made by different manufacturers in order to effectively use that information for crowd sourcing purposes and in order to identify congested areas.
+			\item The availability of the system is another crucial attribute which determines the quality of the system. The system should be readily available at any time to assist the user with navigation. This therefore means that the system’s infrastructure should not be bound to an infrastructure which only operates at specific times.
+			\end{itemize}
 			
 
-	\clearpage
+		\clearpage
 	
 	\section{UML Diagrams}\label{sec:uml-diagrams}
 	
@@ -192,12 +215,5 @@
 			
 			\subsubsection{Use Case Diagram}\label{subsec:uml-diagrams-users-uc}
 		
-	\clearpage
-	
-	\subsection{Deployment Diagram}\label{subsec:deployment-diagram}
-
-	\clearpage
-	
-	\section{Technology Choices}\label{sec:technology-choices}
 
 \end{document}
