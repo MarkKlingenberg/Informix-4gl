@@ -77,19 +77,40 @@
 		
 
 	\section{Performance Requirements}\label{sec:performance-requirements}
-
+		\begin{itemize}
+		\small
+		\item The system should provide the relevant location searched for by the user within a short amount of time.
+		\item The system should provide the accurate location of the user inside or outside of a building using wifi connectivity.
+		\item The system should be able to provide the most effective or quickest route from the users location to their specified destination.
+		\item The system should be resource friendly and not significantly impact the battery life of the device it is on.
+		\item The system should be able to be paused in terms of being able to exit the application, and resumed in terms of reopening the application.
+		\item The system should also be able to accommodate the student population and guests so that the number of users using the system will not hinder the performance of the application.
+		\end{itemize}
 		
 		
 	\clearpage
 
 	\section{Design Constraints}\label{sec:design-constraints}
-	
+		\begin{itemize}
+		\small
+		\item Limited WiFi hotspots will affect the accuracy of determining the users location.
+		\item Different WiFi standards on devices would affect the accuracy of triangulating a users location.
+		\item The dependence on the WiFi hotspots means that if it were to experience some form of failure the system will resultantly also fail.
+		\item Different device displays could affect the way in which the navigation system will be displayed on different devices.
+		\item The size of the system on memory should be taken into consideration to allow for as many devices as possible, therefore it has to be resource friendly.
+		\end{itemize}
 		
 
 	\clearpage
 	
 	\section{Software System Attributes}\label{sec:design-constraints}
-	
+		\begin{itemize}
+		\small
+		\item The security of the system would be the safety protocols to prevent any misuse of users private information which in this case would be their location. These safety protocols include forms of encryption in the database and access control for administrative purposes.
+		\item The reliability of the system will be dependent on the accuracy of determining the users location and destination and providing accurate and effective routes.
+		\item The interoperability of the system should allow for the communication amongst multiple devices made by different manufacturers in order to effectively use that information for crowd sourcing purposes and in order to identify congested areas.
+		\item The availability of the system is another crucial attribute which determines the quality of the system. The system should be readily available at any time to assist the user with navigation. This therefore means that the system’s infrastructure should not be bound to an infrastructure which only operates at specific times.
+		\end{itemize}
 			
 
 	\clearpage
