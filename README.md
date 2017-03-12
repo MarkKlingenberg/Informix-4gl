@@ -6,10 +6,12 @@
 
 ---
 
-* Dreyer, Christiaan
-* Klingenberg, Mark
-* Leshaba, Harris
-* Mangwane, Kenneth
-* Ndung'u, Brian
-* van der Vyver, Nardus	
-* van Tonder, Jan-Justin
+* [Dreyer, Christiaan](https://github.com/DreyerChris)
+* [Klingenberg, Mark](https://github.com/MarkKlingenberg)
+* [Leshaba, Harris](https://github.com/HPLeshaba)
+* [Mangwane, Kenneth](https://github.com/Mangwane)
+* [Ndung'u, Brian](https://github.com/devawa)
+* [van der Vyver, Nardus](https://github.com/BulletFan01)
+* [van Tonder, Jan-Justin](https://github.com/jan-justin)
+
+---
